@@ -8,16 +8,20 @@
 using namespace std;
 
 // Creating a class named sample
-class sample
+class Sample
 {
+// marking private members using the private access modifier
 private:
     int first_data;
     char second_data;
+
+// marking private members using the public access modifier
 public:
-    void set (int integer, char character)
+    // defining set() method by passing two parameters
+    void set(int integer_parameter, char character_parameter)
     {
-        first_data = integer;
-        second_data = character;
+        first_data = integer_parameter;
+        second_data = character_parameter;
     }
     void display(void)
     {
@@ -26,16 +30,19 @@ public:
     }
 };
 
-// The application starts with the main ()
+// The application starts with the main()
 int main()
 {
     cout << "Creating a program to demonstrate the use of bad_alloc exception in C++ with CodeBlocks\n" << endl;
 
     // Variable Declaration and Initialization
-    sample *s_pointer;
+    Sample *s_pointer;
+
+    // Exception Handling - using the try block to capture exceptions
     try
     {
-        s_pointer = new sample;
+        // new operator is used to dynamically allocate memory to objects or variables
+        s_pointer = new Sample;
     }
     catch(bad_alloc)
     {
@@ -43,6 +50,7 @@ int main()
         return 1;
     }
 
+    // calling set() method with two arguments
     s_pointer -> set(25, 'A');
     s_pointer -> display();
 

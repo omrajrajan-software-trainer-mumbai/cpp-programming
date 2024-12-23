@@ -1,4 +1,4 @@
-// Creating a program to demonstrate the use of New and Delete operator in C++ with CodeBlocks
+// Creating a program to demonstrate Manual Garbage Collection using new and delete operator in C++ with CodeBlocks
 // Chapter 03 Page no.48
 
 // Preprocessor Directives
@@ -10,7 +10,7 @@ using namespace std;
 // The application starts with the main ()
 int main()
 {
-    cout << "Creating a program to demonstrate the use of New and Delete operator in C++ with CodeBlocks\n" << endl;
+    cout << "Creating a program to demonstrate Manual Garbage Collection \nusing new and delete operator in C++ with CodeBlocks\n" << endl;
 
     // Variable Declaration and Initialization
     int *one_d_array;

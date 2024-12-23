@@ -14,7 +14,7 @@ int main()
 
     // Variable Declaration and Initialization
     int integer_variable = 25;
-    float float_variable  = 35.87;
+    float float_variable = 35.87;
 
     // Printing the value before typecasting
     cout << "integer_variable = " << integer_variable;

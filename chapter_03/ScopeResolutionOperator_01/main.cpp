@@ -27,12 +27,12 @@ int main()
         cout << "We are in inner block\n";
         cout << "second_variable =" << second_variable << "\n";
         cout << "global_variable =" << global_variable << "\n";
-        cout << "::global_variable = " << :: global_variable << "\n";
+        cout << "::global_variable = " << ::global_variable << "\n";
     }
     // Displaying the outer block
     cout << "\nWe are in outer block\n";
     cout << "global_variable =" << global_variable << "\n";
-    cout << "::global_variable = " << :: global_variable << "\n";
+    cout << "::global_variable = " << ::global_variable << "\n";
 
     return 0;
 }
