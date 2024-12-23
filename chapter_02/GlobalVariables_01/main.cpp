@@ -10,6 +10,6 @@ int main()
 {
     cout << "Program to demonstrate Global Variables in C++ with CodeBlocks" << endl;
 
-    cout << "Hello world!" << endl;
+    cout << "Hello world, Sahil!" << endl;
     return 0;
 }
