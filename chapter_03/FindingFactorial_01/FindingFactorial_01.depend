@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1735030379 source:c:\users\kavya\documents\cpp-programming\chapter_03\findingfactorial_01\main.cpp
+	<iostream>
+	<conio.h>
+

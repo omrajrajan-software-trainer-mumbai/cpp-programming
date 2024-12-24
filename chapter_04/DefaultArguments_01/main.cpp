@@ -14,9 +14,10 @@ int main()
 
     // Variable Declaration and Initialization
     float amount;
+
     // Declaring a function within the main()
-    float value (float first_parameter, int integer_parameter, default_parameter = 0.15);
-    void printline (char symbol = '*', length = 40);
+    float value (float first_parameter, int integer_parameter, float default_parameter = 0.15);
+    void printline (char symbol = '*', int length = 40);
 
     // Calling the function  and it uses the default values for arguement
     printline();
@@ -26,17 +27,17 @@ int main()
     cout << "\nFinal Value = " << amount << "\n\n";
 
     // Passing all the values explicitly
-    amount = value (10000.00, 5,  0.30)
+    amount = value (10000.00, 5,  0.30);
     cout << "\nFinal Value = " << amount << "\n\n";
 
-    // Use default value for second arguement
+    // Use default value for second argument
     printline ('=');
 
     return 0;
 }
 
 // Defining the functions
-float value (float first_parameter, int integer_parameter, default_parameter)
+float value (float first_parameter, int integer_parameter, float default_parameter)
 {
     int year = 1;
     float sum = first_parameter;
@@ -48,5 +49,11 @@ float value (float first_parameter, int integer_parameter, default_parameter)
     }
     return (sum);
 }
-void printline
-
+void printline (char symbol, int length)
+{
+    for(int loop_counter = 1; loop_counter <= length; loop_counter++)
+    {
+        cout << symbol;
+    }
+    cout << "\n";
+}
