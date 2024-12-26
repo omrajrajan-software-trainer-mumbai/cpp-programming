@@ -13,8 +13,8 @@ class item
 private:
     int number;
     float cost;
-// These fields or methods can be accessed directly by the main() as they are public
 
+// These fields or methods can be accessed directly by the main() as they are public
 public:
     // A function being declared within a class
     int get_data(int integer_parameter, float floating_value);
