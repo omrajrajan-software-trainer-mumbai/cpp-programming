@@ -19,7 +19,7 @@ int main()
     float value (float first_parameter, int integer_parameter, float default_parameter = 0.15);
     void printline (char symbol = '*', int length = 40);
 
-    // Calling the function  and it uses the default values for arguement
+    // Calling the function  and it uses the default values for argument
     printline();
 
     // Calling the function and using the default value for the third parameter
