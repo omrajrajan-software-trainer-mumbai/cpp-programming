@@ -1,32 +1,42 @@
+// Created a debugging folder to find the errors
+// Chapter 06 Page No.148
+
 #include <iostream>
 
 using namespace std;
 
 class Room
  {
- int length;
- int width;
+ float mWidth;
+ float mLength;
  public:
- Room( )
+ Room()
  {
- length = 0;
- width = 0;
  }
- Room(int value=8)
+ Room(float w, float h) :mWidth(w), mLength(h)
  {
- length = width = 8;
  }
- void display( )
+ operator float()
  {
- cout << length << " " << width;
+ return (float)mWidth * mLength;
  }
-
+ float getWidth()
+ {
+ }
+ float getLength()
+ {
+ return mLength;
+ }
  };
 
- int main()
+int main()
 {
-    Room objRoom1;
-    objRoom1.display( );
+    cout << "Created a debugging folder to find the errors\n";
 
-    return 0;
+Room objRoom1(2.5, 2.5);
+ float fTotalArea;
+ fTotalArea = objRoom1;
+ cout << fTotalArea;
+
+ return 0;
 }
