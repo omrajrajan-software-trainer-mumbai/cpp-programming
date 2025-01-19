@@ -1,5 +1,5 @@
 // Creating a program to find the factorial of a number using recursive function in C++ with CodeBlocks
-// Chapter 04 Page no.78
+// Chapter 04 Page no.16
 
 // Preprocessor Directives
 #include <iostream>

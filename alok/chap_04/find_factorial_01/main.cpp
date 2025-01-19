@@ -27,15 +27,18 @@ int main()
 
     return 0;
 }
+
 // Defining the function named finding_factorial
 long finding_factorial(int number)
 {
+    // Base condition required for a recursive function
     if (number == 0)
     {
         return 1;
     }
     else
     {
+        // Incremental or decremental recursive calling
         return (number * finding_factorial(number - 1));
     }
 }
