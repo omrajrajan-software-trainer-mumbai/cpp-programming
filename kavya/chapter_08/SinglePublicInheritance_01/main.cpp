@@ -7,52 +7,52 @@
 using namespace std;
 
 // Creating a class named
-class Brace
+class B
 {
 private:
     // As the the below variable is private it is not inheritable
-    int private_1;
+    int a;
 public:
     // The below given variable is public hence it is inheritable
-    int public_variable;
-    void set_value();
-    int get_variable(void);
-    int show_variable(void);
+    int b;
+    void set_ab();
+    int get_a(void);
+    int show_a(void);
 };
 
 // Public Derivation
 //"Public members" of the base class become public members of the derived class and hence accessible to the objects of the derived class
-class Disk : public Brace
+class D : public B
 {
 private:
-    int private_2;
+    int c;
 public:
     void multiply(void);
     void display(void);
 };
 
-// Defining the funtions
-void Brace ::set_value()
+// Defining the functions
+void B ::set_ab()
 {
-    private_1 = 5; public_variable = 10;
+    a = 5; b = 10;
 }
-int Brace ::get_variable(void)
+int B ::get_a(void)
 {
-    return private_1;
+    return a;
 }
-int Brace ::show_variable(void)
+int B ::show_a(void)
 {
-    cout << "Displaying the private variable: " << private_1 << "\n" ;
+    cout << "Displaying the private variable: " << a << "\n" ;
 }
-void Disk ::multiply(void)
+void D ::multiply(void)
 {
-    private_2 = public_variable * get_variable();
+    c = b * get_a();
 }
-void Disk ::display(void)
+void D ::display(void)
 {
-    cout << "Private Variable 01: " << get_variable() << "\n";
-    cout << "Public Variable 01: " << public_variable << "\n";
-    cout << "Private Variable 02: " << private_2 << "\n\n";
+    cout << "a: " << get_a() << "\n";
+    cout << "b: " << b << "\n";
+    cout << "c: " << c << "\n\n";
 }
 
 // The application starts with the main ()
@@ -61,14 +61,14 @@ int main()
     cout << "Creating a program to demonstrate an example of Single Public Inheritance in C++ with CodeBlocks\n" << endl;
 
     // Object declaration and initialization
-    Disk object_1;
+    D object_1;
 
-    object_1.set_value();
+    object_1.set_ab();
     object_1.multiply();
-    object_1.show_variable();
+    object_1.show_a();
     object_1.display();
 
-    object_1.public_variable = 20;
+    object_1.b = 20;
     object_1.multiply();
     object_1.display();
 
