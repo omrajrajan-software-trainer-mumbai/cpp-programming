@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Creating a class named
+// Creating a class named B
 class B
 {
 private:
