@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1737353866 source:c:\users\alok\documents\cpp-programming\alok\chap_04\use_of_math_func_01\main.cpp
+	<iostream>
+	<conio.h>
+	<iomanip>
+	<math.h>
+
