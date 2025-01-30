@@ -1,5 +1,5 @@
 // Creating a program to demonstrate an example of Multilevel Inheritance in C++ with CodeBlocks
-// Chapter 08 Page no.196
+// Chapter 08 Page no.192
 
 // Preprocessor Directives
 #include <iostream>
