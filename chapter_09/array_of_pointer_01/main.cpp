@@ -1,9 +1,10 @@
-// Program to demonstrate arrays of pointers in C++
+// Program to demonstrate arrays of pointers in C++ with CodeBlocks
 // Chap 09  Page no 14
 
 #include <iostream>
 // For strcmp()
 #include <cstring>
+
 using namespace std;
 
 int main()
@@ -15,7 +16,7 @@ int main()
     {
         "books",
         "television",
-        "computer",
+        "computers and tech",
         "sports"
     };
 
@@ -23,7 +24,7 @@ int main()
 
     cout << "Enter your favorite leisure pursuit: ";
 
-    // Using getline to prevent overflow
+    // Using getline() to prevent overflow
     cin.getline(string_to_search, 25);
 
     for (loop_counter = 0; loop_counter < 4; loop_counter++)
@@ -31,7 +32,7 @@ int main()
         // Removed unnecessary dereferencing
         if (!strcmp(string_to_search, array_pointer[loop_counter]))
         {
-            cout << endl << "Your favorite pursuit is available here." << endl;
+            cout << endl << "Your favorite pursuit is available here at position "<< loop_counter + 1 << endl;
             break;
         }
     }

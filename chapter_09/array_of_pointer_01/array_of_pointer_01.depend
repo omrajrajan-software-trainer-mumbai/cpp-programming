@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1738585878 source:c:\users\administrator\documents\cpp-programming\chapter_09\array_of_pointer_01\main.cpp
+	<iostream>
+	<cstring>
+
