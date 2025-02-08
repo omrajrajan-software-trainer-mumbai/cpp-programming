@@ -1,7 +1,4 @@
-// Program to create a function to solve Tower of Hanoi problem recursively in C++ with CodeBlocks
-
 #include <iostream>
-
 using namespace std;
 
 // Function to solve Tower of Hanoi problem recursively
@@ -11,7 +8,7 @@ using namespace std;
 // destination: The rod to which disks need to be moved
 // auxiliary: The rod used as an intermediate for the process
 
-void towerOfHanoi(int number_of_disks, char source, char destination, char auxiliary)
+void towerOfHanoi(int number_of_disks, string source, string destination, string auxiliary)
 {
     // Base case: If there is only one disk, move it directly from source to destination
     if (number_of_disks == 1)
@@ -40,17 +37,15 @@ int main()
     cout << "Enter the number of disks: ";
     cin >> number_of_disks;
 
-    // Explanation: The rods are named A, B, and C for simplicity
-    // A: Source rod where all disks are initially stacked
-    // C: Auxiliary rod used for intermediate steps
-    // B: Destination rod where all disks need to be moved
+    // Explanation: The rods are named Source, Auxiliary, and Destination for simplicity
+    // Source: Source rod where all disks are initially stacked
+    // Auxiliary: Auxiliary rod used for intermediate steps
+    // Destination: Destination rod where all disks need to be moved
 
     cout << "The sequence of moves to solve the Tower of Hanoi with " << number_of_disks << " disks is: " << endl;
 
      // Call the recursive function to solve the problem
-    towerOfHanoi(number_of_disks, 'S', 'D', 'A');
+    towerOfHanoi(number_of_disks, "Source", "Destination", "Auxiliary");
 
-    return 0; // Indicate that the program ended successfully
+    return 0; // Indicate that the program ended successfully
 }
-
-
