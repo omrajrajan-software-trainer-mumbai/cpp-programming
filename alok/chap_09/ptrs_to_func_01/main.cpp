@@ -27,16 +27,16 @@ int main()
     cout << "Creating a program to demonstrate use of pointers to functions in C++ with CodeBlocks" << endl << endl;
 
     // Variable Declaration and Initialization
-    function_pointer pointer;
-    // Storing the address of the add() in the pointer
-    pointer = &add;
-    // Calling the function using the pointer
-    pointer(1, 2);
+    function_pointer pointer_to_function;
+    // Storing the address of the add() in the pointer_to_function
+    pointer_to_function = &add;
+    // Calling the function using the pointer_to_function
+    pointer_to_function(1, 2);
     cout << endl;
-    // Storing the address of the subtract() in the pointer
-    pointer = &subtract;
-    // Calling the function using the pointer
-    pointer(3, 2);
+    // Storing the address of the subtract() in the pointer_to_function
+    pointer_to_function = &subtract;
+    // Calling the function using the pointer_to_function
+    pointer_to_function(3, 2);
     cout << endl;
 
     return 0;

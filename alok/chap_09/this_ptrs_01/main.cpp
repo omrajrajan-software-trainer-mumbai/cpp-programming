@@ -8,26 +8,47 @@
 using namespace std;
 
 // Creating a class named Person
-class Person
+class person
 {
-private:
     char name[20];
     float age;
-public:
-    Person(char *name_string, float age_variable)
-    {
-        strcpy(name, name_string);
-        age = age_variable;
-    }
-    Person & Person :: greater(person & x)
+    public:
+        // Special method - constructor
+        // Same name as class and no return type
+        // Use to automatically initialize fields of a class
+        // Automatically called on creation of each object of the class
+        person(char *s, float a)
+        {
+            strcpy(name, s);
+            age = a;
+        }
+        person & person :: greater(person & x)
+        {
+            if(x.age >= age)
+            return x;
 
+            else
+            return *this;
+        }
+        void display(void)
+        {
+            cout << "Name: " << name << "\n" << "Age: " << age << "\n";
+        }
 };
 
-// The application starts with the main ()
 int main()
 {
-    cout << "Creating a program to illustrate the use of this pointer in C++ with CodeBlocks" << endl << endl;
+    person person_1("John", 37.50),person_2("Ahmed", 2 9.0),person_3("Hebber", 40.25);
 
-    // Variable Declaration and Initialization
+    // person_3.greater(person_1)
+    person P = person_1.greater(person_3);
+    cout << "Elder person is: \n";
+    P.display();
+
+    // person_2.greater(person_1)
+    P = person_1.greater(person_2);
+    cout << "Elder person is: \n";
+    P.display();
+
     return 0;
 }

@@ -11,17 +11,17 @@ using namespace std;
 class Item
 {
 private:
-    // Declaring the variables in the private section of the class
+    // Declaring the variables/fields in the private section of the class
     int code;
     float price;
 public:
-    // Defining the functions in the public section of the class
-    void get_data(int integer_variable, float float_variable)
+    // Defining the functions/Methods in the public section of the class
+    void set_data(int integer_variable, float float_variable)
     {
        code = integer_variable;
        price = float_variable;
     }
-    void show(void)
+    void get_data(void)
     {
         cout << "Code: " << code << endl;
         cout << "Price: " << price << endl;
@@ -47,14 +47,14 @@ int main()
     {
         cout << "Input code and price for item" << loop_counter + 1 << " ";
         cin >> code >> price;
-        pointer_variable ->get_data(code, price);
+        pointer_variable ->set_data(code, price);
         pointer_variable++;
     }
     // Initiating a loop to display output
     for(loop_counter = 0; loop_counter < SIZE; loop_counter++)
     {
         cout << "Item: " << loop_counter + 1 << endl;
-        pointers_pointer ->show();
+        pointers_pointer ->get_data();
         pointers_pointer++;
     }
 
