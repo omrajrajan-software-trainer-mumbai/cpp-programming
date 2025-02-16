@@ -14,14 +14,18 @@ private:
     char name[20];
     float age;
 public:
+    // Special method - constructor
+    // Same name as class and no return type
+    // Use to automatically initialize fields of a class
+    // Automatically called on creation of each object of the class
     Person(char *name_string, float age_variable)
     {
         strcpy(name, name_string);
         age = age_variable;
     }
-    Person & Person ::greater(person &second_person)
+    Person& greater(Person &second_person)
     {
-        if(second_person.age >= this.age)
+        if(second_person.age >= this->age)
             return second_person;
         else
             return *this;
@@ -42,7 +46,7 @@ int main()
     // Variable Declaration and Initialization
     Person p1("John", 37.50);
     Person p2("Ahmad", 29.0);
-    Person p3("Hebbber", 40.25);
+    Person p3("Hebbar", 40.25);
 
     //
     Person p = p1.greater(p3);

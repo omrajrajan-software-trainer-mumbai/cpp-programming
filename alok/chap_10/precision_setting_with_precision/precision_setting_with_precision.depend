@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1739595820 source:c:\users\alok\documents\cpp-programming\alok\chap_10\precision_setting_with_precision\main.cpp
+	<iostream>
+	<math.h>
+
