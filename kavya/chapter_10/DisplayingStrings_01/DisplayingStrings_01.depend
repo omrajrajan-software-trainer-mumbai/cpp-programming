@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1739716813 source:c:\users\kavya\onedrive\documents\coding_work\cpp-programming\kavya\chapter_10\displayingstrings_01\main.cpp
+	<iostream>
+	<string.h>
+
