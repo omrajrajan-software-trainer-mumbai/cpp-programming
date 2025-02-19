@@ -1,5 +1,5 @@
 // Creating a program to demonstrates the use of function width() C++ with CodeBlocks
-// Chapter 10 Page no.
+// Chapter 10 Page no.268
 
 // Preprocessor Directives
 #include <iostream>

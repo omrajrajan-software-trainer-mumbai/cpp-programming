@@ -1,5 +1,5 @@
 // Creating a program to illustrate how write() method displays a string in C++ with CodeBlocks
-// Chapter 10 Page no.
+// Chapter 10 Page no.265
 
 // Preprocessor Directives
 #include <iostream>
