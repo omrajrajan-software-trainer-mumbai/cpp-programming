@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1736750971 source:c:\users\alok\documents\cpp-programming\alok\chap_03\bad_alloc_exception_01\main.cpp
+	<iostream>
+	<conio.h>
+

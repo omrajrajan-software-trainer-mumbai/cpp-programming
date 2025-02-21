@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1739956205 source:c:\users\alok\documents\cpp-programming\alok\chap_11\reading_from_two_files_simultaneously_01\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+

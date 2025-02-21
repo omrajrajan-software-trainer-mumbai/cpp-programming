@@ -6,7 +6,7 @@ enum shape
 };
 int main()
 {
-    cout << “Enter shape code: ”;
+    cout << "Enter shape code: ";
     int code;
     cin >> code;
     while(code >= circle && code <= triangle)
@@ -26,7 +26,7 @@ int main()
             ......
             break;
         }
-        cout << “Enter shape code:”;
+        cout << "Enter shape code: ";
         cin >> code;
     }
     cout << “BYE \n”;
