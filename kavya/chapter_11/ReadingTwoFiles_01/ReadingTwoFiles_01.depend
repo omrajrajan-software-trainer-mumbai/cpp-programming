@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1740301910 source:c:\users\kavya\onedrive\documents\coding_work\cpp-programming\kavya\chapter_11\readingtwofiles_01\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+
