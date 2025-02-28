@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1740740504 source:c:\users\kavya\onedrive\documents\coding_work\cpp-programming\kavya\chapter_11\operationoncharacters_01\main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+

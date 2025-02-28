@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1740742293 source:c:\users\kavya\onedrive\documents\college_work\cpp_practical\pract_02\operationsonbinary_01\main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+
