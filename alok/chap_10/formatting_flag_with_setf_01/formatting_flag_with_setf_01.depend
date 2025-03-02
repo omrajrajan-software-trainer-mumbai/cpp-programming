@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1739939177 source:c:\users\alok\documents\cpp-programming\alok\chap_10\formatting_flag_with_setf_01\main.cpp
+	<iostream>
+	<math.h>
+

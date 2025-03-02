@@ -10,7 +10,6 @@ using namespace std;
 
 class INVENTORY
 {
-    cout << "Program to demonstrate reading and writing class objects in C++ with CodeBlocks" << endl;
 
     private:
     char name[10];
@@ -36,22 +35,24 @@ class INVENTORY
 
 int main()
 {
+    cout << "Program to demonstrate reading and writing class objects in C++ with CodeBlocks" << endl;
+
     INVENTORY item[3];
     fstream file;
     file.open("STOCK.DAT", ios::in | ios::out);
     cout << "ENTER DETAILS FOR THREE ITEMS \n";
 
-    for(int i=0;i<3;i++)
+    for (int loop_counter = 0; loop_counter < 3; loop_counter++)
     {
-        item[i].readdata();
-        file.write((char *) & item[i],sizeof(item[i]));
+        item[loop_counter].readdata();
+        file.write((char *) & item[loop_counter],sizeof(item[loop_counter]));
     }
     file.seekg(0);
     cout << "\nOUTPUT\n\n";
-    for(i = 0; i < 3; i++)
+    for(int loop_counter = 0; loop_counter < 3; loop_counter++)
     {
-        file.read((char *) & item[i], sizeof(item[i]));
-        item[i].writedata();
+        file.read((char *) & item[loop_counter], sizeof(item[loop_counter]));
+        item[loop_counter].writedata();
     }
     file.close();
 

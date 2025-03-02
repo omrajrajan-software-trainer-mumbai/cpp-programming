@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1739955236 source:c:\users\alok\documents\cpp-programming\alok\chap_11\working_with_single_file_01\main.cpp
+	<iostream>
+	<fstream>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1740460624 source:c:\users\alok\documents\cpp-programming\alok\chap_11\counting_objects_in_file_01\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

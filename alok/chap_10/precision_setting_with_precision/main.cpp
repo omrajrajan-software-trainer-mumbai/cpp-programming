@@ -27,7 +27,7 @@ int main()
     }
     cout << "\n Precision set to 5 digits \n\n";
     // precision parameter changed
-    cout.precision(5);
+    cout.precision(6);
 
     cout << " sqrt(10) = " << sqrt(10) << endl;
     // precision set to default

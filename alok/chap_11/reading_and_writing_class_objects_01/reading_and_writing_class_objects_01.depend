@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1740720015 source:c:\users\alok\documents\cpp-programming\alok\chap_11\reading_and_writing_class_objects_01\main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+

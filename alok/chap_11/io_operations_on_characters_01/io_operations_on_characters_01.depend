@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1739963744 source:c:\users\alok\documents\cpp-programming\alok\chap_11\io_operations_on_characters_01\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

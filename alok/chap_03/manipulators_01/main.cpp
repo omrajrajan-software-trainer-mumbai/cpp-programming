@@ -1,4 +1,4 @@
-// Creating a program to demonstrate the use of Manipulators in C++ with CodeBlocks
+// Program to demonstrate the use of Manipulators in C++ with CodeBlocks
 // Chapter 03 Page no.39
 
 // Preprocessor Directives
@@ -12,7 +12,7 @@ using namespace std;
 // The application starts with the main ()
 int main()
 {
-    cout << "Creating a program to demonstrate the use of Manipulators in C++ with CodeBlocks\n" << endl;
+    cout << "Program to demonstrate the use of Manipulators in C++ with CodeBlocks\n" << endl;
 
     // Variable Declaration and Initialization
     int basic = 950, allowance = 95, total = 1045;
