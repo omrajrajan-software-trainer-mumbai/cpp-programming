@@ -12,38 +12,37 @@ int main()
 {
     cout << "Program to demonstrate uses a multiple file for both writing and reading the data in C++ with CodeBlocks" << endl;
 
-    ofstream fout;
-    fout.open("country");
-    fout << "United States of America\n";
-    fout << "United Kingdom\n";
-    fout << "South Korea\n";
-    fout.close();
+    ofstream output_file_handler;
+    output_file_handler.open("country.dat");
+    output_file_handler << "United States of America" << endl;
+    output_file_handler << "United Kingdom" << endl;
+    output_file_handler << "South Korea" << endl;
 
-    fout.open("capital");
-    fout << "Washington\n";
-    fout << "London\n";
-    fout << "Seoul\n";
-    fout.close();
+    output_file_handler.open("capital.dat");
+    output_file_handler << "Washington" << endl;
+    output_file_handler << "London" << endl;
+    output_file_handler << "Seoul" << endl;
+    output_file_handler.close();
 
     // Reading the files
     const int size_of_line = 80;
     char line[size_of_line];
-    ifstream fin;
-    fin.open("country");
-    cout <<"contents of country file\n";
-    while(fin)
+    ifstream input_file_handler;
+    input_file_handler.open("country.dat");
+    cout << endl <<"contents of country file " << endl;
+    while(input_file_handler)
     {
-        fin.getline(line, size_of_line); // read a line
-        cout << line ; // display it
+        input_file_handler.getline(line, size_of_line); // read a line
+        cout << line << endl; // display it
     }
-    fin.close(); // disconnect "country" and
-    fin.open("capital"); // connect "capital"
-    cout << "\nContents of capital file \n";
-    while(fin)
+    input_file_handler.close(); // disconnect "country" and
+    input_file_handler.open("capital.dat"); // connect "capital"
+    cout << endl << "Contents of capital file " << endl;
+    while(input_file_handler)
     {
-        fin.getline(line, size_of_line);
-        cout << line ;
-        fin.close();
+        input_file_handler.getline(line, size_of_line);
+        cout << line << endl;
+        input_file_handler.close();
 
     }
     return 0;

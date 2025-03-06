@@ -12,15 +12,15 @@ int main()
 {
     cout << "Program to demonstrate uses a single file for both writing and reading the data in C++ with CodeBlocks" << endl;
 
-    // connect ITEM file to outf
-    ofstream outf("ITEM");
+    // connect ITEM file to output_file_handler
+    ofstream output_file_handler("ITEM.dat");
     cout << "Enter item name: ";
     char name[30];
 
     // get name from key board and
     cin >> name;
     // write to file ITEM
-    outf << name << endl;
+    output_file_handler << name << endl;
     cout << "Enter item cost: ";
     float cost;
 
@@ -28,25 +28,25 @@ int main()
     cin >> cost;
 
     // write to file ITEM
-    outf << cost << endl;
+    output_file_handler << cost << endl;
 
-    // Disconnect ITEM file from outf
-    outf.close();
+    // Disconnect ITEM file from output_file_handler
+    output_file_handler.close();
 
-    // connect ITEM file to inf
-    ifstream inf("ITEM");
+    // connect ITEM file to input_file_handler
+    ifstream input_file_handler("ITEM.dat");
 
     // read name from file ITEM
-    inf >> name;
+    input_file_handler >> name;
 
     // read cost from file ITEM
-    inf >> cost;
+    input_file_handler >> cost;
     cout << endl;
     cout << "Item name:" << name << endl;
     cout << "Item cost:" << cost << endl;
 
-    // Disconnect ITEM from inf
-    inf.close();
+    // Disconnect ITEM from input_file_handler
+    input_file_handler.close();
 
     return 0;
 }
